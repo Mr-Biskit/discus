@@ -1,5 +1,5 @@
 import TopNavigation from "./TopNavigation";
-import { PlusCircleIcon } from "@heroicons/react/24/solid";
+import { PaperAirplaneIcon } from "@heroicons/react/24/solid";
 // import { useState } from 'react';
 
 const ContentContainer = () => {
@@ -73,12 +73,12 @@ const ContentContainer = () => {
 
 const BottomBar = () => (
   <div className="bottom-bar">
-    <PlusIcon />
     <input
       type="text"
       placeholder="Enter message..."
       className="bottom-bar-input"
     />
+    <SendIcon />
   </div>
 );
 
@@ -110,8 +110,8 @@ const Post = ({ name, timestamp, text }: PostProps) => {
   );
 };
 
-const PlusIcon = () => (
-  <PlusCircleIcon className="text-green-500 dark:shadow-lg mx-2 dark:text-primary w-12 h-12" />
+const SendIcon = () => (
+  <PaperAirplaneIcon className="text-orange dark:shadow-lg mx-2 dark:text-primary w-12 h-12" />
 );
 
 export default ContentContainer;

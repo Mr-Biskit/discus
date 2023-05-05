@@ -1,5 +1,12 @@
 import { FC } from "react";
-import { PlusIcon, FireIcon, Cog6ToothIcon } from "@heroicons/react/24/solid";
+import {
+  PlusIcon,
+  FireIcon,
+  Cog6ToothIcon,
+  UserGroupIcon,
+  ChatBubbleLeftRightIcon,
+  ArrowRightOnRectangleIcon,
+} from "@heroicons/react/24/solid";
 
 interface SideBarProps {}
 
@@ -12,12 +19,20 @@ const SideBar: FC<SideBarProps> = ({}) => {
   return (
     <div
       className="fixed top-0 left-0 h-screen w-16 flex flex-col
-                      bg-white dark:bg-gray-900 shadow-lg"
+                      bg-white dark:bg-gray-900 shadow-lg justify-between items-center"
     >
-      <SideBarIcon icon={<FireIcon />} />
-      <Divider />
-      <SideBarIcon icon={<PlusIcon />} />
-      <SideBarIcon icon={<Cog6ToothIcon />} />
+      <div className="flex flex-col">
+        <SideBarIcon icon={<FireIcon />} /> <SideBarIcon icon={<PlusIcon />} />
+        <SideBarIcon icon={<UserGroupIcon />} />
+        <SideBarIcon icon={<ChatBubbleLeftRightIcon />} />
+        <Divider />
+      </div>
+
+      <div className="flex flex-col">
+        <Divider />
+        <SideBarIcon icon={<Cog6ToothIcon />} />
+        <SideBarIcon icon={<ArrowRightOnRectangleIcon />} />
+      </div>
     </div>
   );
 };

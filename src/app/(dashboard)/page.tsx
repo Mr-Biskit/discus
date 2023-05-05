@@ -1,5 +1,5 @@
 import ContentContainer from "@/components/ContentContainer";
-import FriendBar from "@/components/FriendBar";
+import ChatBar from "@/components/ChatBar";
 import SideBar from "@/components/SideBar";
 import { FC } from "react";
 
@@ -9,7 +9,7 @@ const page: FC<pageProps> = ({}) => {
   return (
     <div className="flex">
       <SideBar />
-      <FriendBar />
+      <ChatBar />
       <ContentContainer />
     </div>
   );

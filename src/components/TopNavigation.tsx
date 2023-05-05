@@ -10,7 +10,6 @@ import {
 const TopNavigation = () => {
   return (
     <div className="top-navigation">
-      <HashtagsIcon />
       <Title />
       <ThemeIcon />
       <Search />
@@ -21,14 +20,9 @@ const TopNavigation = () => {
 };
 
 const ThemeIcon = () => {
-  const darkTheme = true;
   return (
     <span>
-      {darkTheme ? (
-        <SunIcon className="top-navigation-icon" />
-      ) : (
-        <MoonIcon className="top-navigation-icon" />
-      )}
+      <SunIcon className="top-navigation-icon h-12 w-12" />
     </span>
   );
 };
@@ -45,7 +39,7 @@ const AlertBellIcon = () => (
 const UserCircle = () => (
   <UserCircleIcon className="top-navigation-icon h-12 w-12" />
 );
-const HashtagsIcon = () => <HashtagIcon className="title-hashtag h-12 w-12" />;
-const Title = () => <h5 className="title-text">tailwind-css</h5>;
+
+const Title = () => <h5 className="title-text">Anmol Pok</h5>;
 
 export default TopNavigation;

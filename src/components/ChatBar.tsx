@@ -9,19 +9,19 @@ const topics = ["tailwind-css", "react"];
 const questions = ["jit-compilation", "purge-files", "dark-mode"];
 const random = ["variants", "plugins"];
 
-const FriendBar = () => {
+const ChatBar = () => {
   return (
     <div className="channel-bar shadow-lg">
-      <FriendBlock />
+      <ChatBlock />
       <div className="channel-container"></div>
     </div>
   );
 };
 
-const FriendBlock = () => (
+const ChatBlock = () => (
   <div className="channel-block">
-    <h5 className="channel-block-text">Friends</h5>
+    <h5 className="channel-block-text">Chats</h5>
   </div>
 );
 
-export default FriendBar;
+export default ChatBar;
