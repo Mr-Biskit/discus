@@ -5,10 +5,6 @@ import {
   ArrowDownLeftIcon,
 } from "@heroicons/react/24/solid";
 
-const topics = ["tailwind-css", "react"];
-const questions = ["jit-compilation", "purge-files", "dark-mode"];
-const random = ["variants", "plugins"];
-
 const ChatBar = () => {
   return (
     <div className="channel-bar shadow-lg">

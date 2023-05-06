@@ -1,9 +1,3 @@
-import { FC } from "react";
-
-interface pageProps {}
-
-const page: FC<pageProps> = ({}) => {
+export default function Home() {
   return <div>page</div>;
-};
-
-export default page;
+}
